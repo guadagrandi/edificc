@@ -34,6 +34,7 @@ span{
 /* index */
 .jumbotron{
     background-image: url(img/359733910_670537988404196_4441769346615685615_n.jpg);
+    
     height: 450px;
     background-size: cover;
     background-position: center;
@@ -387,4 +388,14 @@ footer a:hover{
         grid-template-columns: repeat(4, 350px);
         grid-template-rows: repeat(2, 350px);
     }
+}
+@media only screen and (min-width:350px) and (max-width:1024px){
+    body{
+        background-color: orange;
+    }
+}
+@mixin estilos{
+    background-color: #333;
+    width: 300px;
+    height: 300px;
 }

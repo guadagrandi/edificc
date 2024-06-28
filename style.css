@@ -49,6 +49,7 @@ span {
 .envio h2 {
   font-size: 30px;
   margin-bottom: 40px;
+  transition: height 2s, width 0.5s;
 }
 
 .envio p {
@@ -62,6 +63,11 @@ span {
   padding: 20px;
   margin-top: 25px;
   grid-gap: 5px;
+}
+.galeria:hover{
+  /* height: 200px; */
+  width: 600px;
+  transition: all 2s;
 }
 
 .item {
@@ -181,6 +187,10 @@ span {
 
 .caract {
   font-size: 28px;
+  
+}
+.caract h1{
+  text-align: center;
 }
 
 .caract1 {
@@ -373,3 +383,31 @@ footer a:hover {
     grid-template-rows: repeat(2, 350px);
   }
 }/*# sourceMappingURL=style.css.map */
+
+.cards{
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: aquamarine;
+  animation-name: efecto;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes efecto{
+  0%{
+      width: 100px;
+  }
+  10%{
+      background-color: gray;
+  }
+  50%{
+      border-radius: 10%;
+  }
+  100%{
+      width: 500px;
+      background-color: black;
+  }
+}
